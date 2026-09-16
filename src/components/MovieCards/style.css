@@ -1,0 +1,121 @@
+/* ===== CineVault Movie Card ===== */
+
+.card {
+    background: #151d2e !important;
+    border: 1px solid #2a354a !important;
+    border-radius: 10px !important;
+    overflow: hidden;
+    color: #f8fafc;
+    transition: 
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+/* Card Hover */
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #6c5ce7 !important;
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.35),
+        0 0 20px rgba(108, 92, 231, 0.16) !important;
+}
+
+/* Movie Poster */
+
+.card > img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.card:hover > img {
+    transform: scale(1.02);
+}
+
+/* Card Content */
+
+.card-body {
+    background: #151d2e;
+    padding: 18px !important;
+}
+
+/* Movie Title */
+
+.title__text {
+    color: #ffffff !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+/* Genres */
+
+.genres {
+    color: #9ca8ba !important;
+    font-size: 13px;
+    min-height: 20px;
+    margin-bottom: 18px;
+}
+
+/* View Info Button */
+
+.btn__view {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 7px 11px;
+    color: #c9c4ff !important;
+    border-color: #6c5ce7 !important;
+    background: transparent !important;
+    transition: all 0.2s ease;
+}
+
+.btn__view:hover {
+    color: #ffffff !important;
+    background: #6c5ce7 !important;
+    border-color: #6c5ce7 !important;
+}
+
+/* Rating */
+
+.rating {
+    font-size: 14px;
+    font-weight: 600;
+    color: #f8fafc !important;
+}
+
+/* Star */
+
+.text-warning {
+    color: #ffc93c !important;
+}
+
+/* Better Card Column Spacing */
+
+.col {
+    margin-bottom: 24px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .card > img {
+        height: 350px;
+    }
+
+    .card-body {
+        padding: 15px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .card > img {
+        height: 400px;
+    }
+}

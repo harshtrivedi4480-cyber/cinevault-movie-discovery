@@ -1,0 +1,208 @@
+/* ===== CineVault Theme — Harsh Trivedi ===== */
+
+:root {
+  --brand: #6c5ce7;
+  --brand-dark: #5646c7;
+  --brand-light: #a29bfe;
+  --brand-rgb: 108, 92, 231;
+
+  --accent-gold: #ffc93c;
+
+  /* Cinematic Background */
+  --bg-main: #0b1020;
+  --bg-secondary: #111827;
+  --bg-surface: #172033;
+}
+
+/* ===== Global Page ===== */
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg-main);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(108, 92, 231, 0.16),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(255, 201, 60, 0.07),
+      transparent 28%
+    ),
+    linear-gradient(
+      180deg,
+      #0b1020 0%,
+      #111827 45%,
+      #0b1020 100%
+    );
+
+  color: #f8fafc;
+}
+
+/* ===== Smooth, Lightweight Scrolling ===== */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--brand) #111827;
+}
+
+/* Chrome / Edge / Safari Scrollbar */
+
+body::-webkit-scrollbar,
+.genres__box::-webkit-scrollbar,
+.search-result::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track,
+.genres__box::-webkit-scrollbar-track,
+.search-result::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+body::-webkit-scrollbar-thumb,
+.genres__box::-webkit-scrollbar-thumb,
+.search-result::-webkit-scrollbar-thumb {
+  background: var(--brand) !important;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb:hover,
+.genres__box::-webkit-scrollbar-thumb:hover,
+.search-result::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-light) !important;
+}
+
+/* ===== Brand / Bootstrap Primary ===== */
+
+.btn-primary {
+  background-color: var(--brand) !important;
+  border-color: var(--brand) !important;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--brand-dark) !important;
+  border-color: var(--brand-dark) !important;
+  transform: translateY(-1px);
+}
+
+.btn-outline-light:hover {
+  background-color: var(--brand) !important;
+  border-color: var(--brand) !important;
+}
+
+.text-primary {
+  color: var(--brand) !important;
+}
+
+a.text-primary:hover {
+  color: var(--brand-light) !important;
+}
+
+/* ===== Special Components ===== */
+
+.camera__icon {
+  background-color: var(--brand) !important;
+}
+
+.page-item.active .page-link {
+  background-color: var(--brand) !important;
+  border-color: var(--brand) !important;
+}
+
+.page-link {
+  color: var(--brand-dark);
+}
+
+.page-link:hover {
+  color: var(--brand-dark);
+}
+
+/* ===== Text Selection ===== */
+
+::selection {
+  background: var(--brand);
+  color: #fff;
+}
+
+/* ===== Movie Cards ===== */
+
+.card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  will-change: transform;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 14px 30px rgba(0, 0, 0, 0.25),
+    0 6px 18px rgba(var(--brand-rgb), 0.16) !important;
+}
+
+.card img {
+  content-visibility: auto;
+}
+
+/* ===== Genres / Search Dropdown ===== */
+
+.genres__box::-webkit-scrollbar-track,
+.search-result::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+.genres__box::-webkit-scrollbar-thumb,
+.search-result::-webkit-scrollbar-thumb {
+  background: var(--brand) !important;
+  border-radius: 20px;
+}
+
+/* ===== Cinematic Section Feel ===== */
+
+section {
+  position: relative;
+}
+
+/* ===== Links ===== */
+
+a {
+  transition: color 0.2s ease;
+}
+
+/* ===== Footer Spacing ===== */
+
+footer {
+  position: relative;
+}
+
+/* ===== Responsive Background ===== */
+
+@media (max-width: 768px) {
+  body {
+    background:
+      radial-gradient(
+        circle at 50% 5%,
+        rgba(108, 92, 231, 0.14),
+        transparent 35%
+      ),
+      linear-gradient(
+        180deg,
+        #0b1020 0%,
+        #111827 50%,
+        #0b1020 100%
+      );
+  }
+}
