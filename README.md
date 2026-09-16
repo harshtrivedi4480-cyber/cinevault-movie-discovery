@@ -1,67 +1,94 @@
-# 🎬 CineVault
+# 🎬 CineVault — Movie Discovery Web App
 
-A clean, fast movie discovery web app — browse trending movies, search by title, filter by genre, and view full movie details. Built with React.
+A modern, responsive movie discovery web application built with React.js. CineVault lets users explore movies, search by title, browse movies by genre, and view detailed movie information through a clean and interactive interface.
 
 > Built by **Harsh Trivedi** — Full Stack Web Developer
 
+## 🌐 Live Demo
+
+🚀 **Live Website:**  
+https://cinevault-movie-discovery-zeta.vercel.app/
+
 ## ✨ Features
 
-- Browse movies with pagination
-- Live search
-- Filter movies by genre
-- Detailed movie info page (cast, plot, rating, runtime)
-- Login / Register (with modal)
-- Add movie & profile pages
-- Fully responsive, dark-themed UI with a custom color palette
-- Smooth scroll + lazy-loaded images for a fast experience
+- 🎬 Browse movies with pagination
+- 🔍 Search movies by title
+- 🎭 Filter movies by genre
+- 📄 Detailed movie information
+- ⭐ Movie ratings and information
+- 🎞️ Full-screen movie carousel
+- ⏩ Automatic carousel sliding
+- ⬅️➡️ Previous and next carousel controls
+- 🔐 Login / Register pages
+- 👤 User profile page
+- ➕ Add Movie page
+- 📱 Fully responsive design
+- 🌙 Modern dark-themed UI
+- ⚡ Smooth and interactive user experience
+- 🖼️ Lazy-loaded images
+- 🚀 Deployed on Vercel
 
-## 🛠 Built with
+## 📸 Screenshots
 
-- React
-- React Router
-- React Query (TanStack Query)
-- React Paginate
-- Bootstrap 5
-- Axios
-- React Icons
+### 🏠 Home Page
 
-## 🚀 Getting started
+![CineVault Home Page](./screenshots/cinevault-home.png)
 
-1. Clone this repository
-   ```bash
-   git clone https://github.com/<your-username>/cinevault.git
-   cd cinevault
-   ```
-2. Install dependencies
-   ```bash
-   npm install
-   ```
-3. Run the app locally
-   ```bash
-   npm start
-   ```
-   App runs at `http://localhost:3000`
+### 🎬 Movie Discovery
 
-## 📦 Build for production
+![CineVault Movie Discovery](./screenshots/cinevault-movies.png)
 
-```bash
-npm run build
-```
+## 🛠️ Built With
 
-## 🌐 Deploy
+- **React.js**
+- **JavaScript**
+- **React Router**
+- **TanStack React Query**
+- **React Paginate**
+- **Bootstrap 5**
+- **Axios**
+- **React Icons**
+- **CSS**
+- **Git & GitHub**
+- **Vercel**
 
-This app is ready to deploy on **Vercel**:
+## 📂 Project Structure
 
-1. Push this project to a GitHub repository.
-2. Go to [vercel.com/new](https://vercel.com/new) and import the repo.
-3. Framework preset: **Create React App** (auto-detected).
-4. Build command: `npm run build` · Output directory: `build`
-5. Click **Deploy**.
-
-## 👤 Author
-
-**Harsh Trivedi**
-Full Stack Web Developer
-
----
-Made with ❤️ using React.
+```text
+cinevault-movie-discovery/
+│
+├── public/
+│
+├── screenshots/
+│   ├── cinevault-home.png
+│   └── cinevault-movies.png
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Carousel/
+│   │   ├── Footer/
+│   │   ├── Header/
+│   │   ├── MovieCards/
+│   │   └── MovieItem/
+│   │
+│   ├── config/
+│   ├── contexts/
+│   ├── hooks/
+│   ├── layouts/
+│   ├── pages/
+│   │   ├── AddMovie/
+│   │   ├── Authentication/
+│   │   ├── Genre/
+│   │   ├── Home/
+│   │   ├── MovieDetails/
+│   │   └── Profile/
+│   │
+│   ├── services/
+│   └── styles/
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── vercel.json
+└── README.md
