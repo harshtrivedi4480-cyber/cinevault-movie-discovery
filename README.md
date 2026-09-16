@@ -32,11 +32,12 @@ https://cinevault-movie-discovery-zeta.vercel.app/
 
 ### 🏠 Home Page
 
-![CineVault Home Page](./screenshots/cinevault-home.png)
+<img width="1920" height="859" alt="image" src="https://github.com/user-attachments/assets/f4314d6c-2f54-45b1-be5c-587710984dfa" />
+
 
 ### 🎬 Movie Discovery
 
-![CineVault Movie Discovery](./screenshots/cinevault-movies.png)
+![Uploading image.png…]()
 
 ## 🛠️ Built With
 
