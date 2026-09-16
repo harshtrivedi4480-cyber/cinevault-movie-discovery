@@ -37,7 +37,7 @@ https://cinevault-movie-discovery-zeta.vercel.app/
 
 ### 🎬 Movie Discovery
 
-![Uploading image.png…]()
+<img width="1920" height="872" alt="image" src="https://github.com/user-attachments/assets/d46cc8a4-da64-4268-ad91-e0b90b221450" />
 
 ## 🛠️ Built With
 
